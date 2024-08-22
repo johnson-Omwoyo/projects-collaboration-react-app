@@ -1,0 +1,148 @@
+{
+  "projects": [
+    {
+      "projectId": "p1",
+      "projectname": "Database Revamp",
+      "category": "Database Management",
+      "owner": "Jonson Omwoyo",
+      "contributors": ["Jonson Omwoyo", "Sara Lee"],
+      "image": "https://via.placeholder.com/150?text=Database+Revamp",
+      "favorite": false,
+      "tasks": [
+        {
+          "taskId": "t1",
+          "taskname": "Database Upgrade",
+          "description": "We will look at the database hierarchy and implement some authentication.",
+          "status": "starting",
+          "comments": [
+            {
+              "comment": "What if we reduce the amount of data?",
+              "name": "Jonson Omwoyo",
+              "likes": "10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "projectId": "p2",
+      "projectname": "API Enhancement",
+      "category": "API Development",
+      "owner": "Sara Lee",
+      "contributors": ["Sara Lee", "Michael Johnson"],
+      "image": "https://via.placeholder.com/150?text=API+Enhancement",
+      "favorite": true,
+      "tasks": [
+        {
+          "taskId": "t2",
+          "taskname": "API Integration",
+          "description": "Integrate third-party API to enhance functionality and streamline data exchange.",
+          "status": "in progress",
+          "comments": [
+            {
+              "comment": "Consider handling rate limits to avoid service disruptions.",
+              "name": "Sara Lee",
+              "likes": "7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "projectId": "p3",
+      "projectname": "User Experience Overhaul",
+      "category": "UI/UX Design",
+      "owner": "Alex Kim",
+      "contributors": ["Alex Kim", "Laura Smith"],
+      "image": "https://via.placeholder.com/150?text=UI+Redesign",
+      "favorite": false,
+      "tasks": [
+        {
+          "taskId": "t3",
+          "taskname": "UI Redesign",
+          "description": "Revamp the user interface to improve user experience and accessibility.",
+          "status": "completed",
+          "comments": [
+            {
+              "comment": "The new design looks great, but can we add more contrast?",
+              "name": "Alex Kim",
+              "likes": "15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "projectId": "p4",
+      "projectname": "Application Performance",
+      "category": "Performance Optimization",
+      "owner": "Emily Wong",
+      "contributors": ["Emily Wong", "Jonson Omwoyo"],
+      "image": "https://via.placeholder.com/150?text=Performance+Tuning",
+      "favorite": true,
+      "tasks": [
+        {
+          "taskId": "t4",
+          "taskname": "Performance Tuning",
+          "description": "Optimize application performance by analyzing and addressing bottlenecks.",
+          "status": "starting",
+          "comments": [
+            {
+              "comment": "We might need to upgrade the hardware to see significant improvements.",
+              "name": "Emily Wong",
+              "likes": "5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "projectId": "p5",
+      "projectname": "Security Overhaul",
+      "category": "Security",
+      "owner": "Michael Johnson",
+      "contributors": ["Michael Johnson", "Emily Wong"],
+      "image": "https://via.placeholder.com/150?text=Security+Audit",
+      "favorite": false,
+      "tasks": [
+        {
+          "taskId": "t5",
+          "taskname": "Security Audit",
+          "description": "Conduct a thorough security audit to identify and mitigate vulnerabilities.",
+          "status": "in progress",
+          "comments": [
+            {
+              "comment": "Ensure to include a review of recent security patches.",
+              "name": "Michael Johnson",
+              "likes": "12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "projectId": "p6",
+      "projectname": "Feature Upgrades",
+      "category": "Feature Development",
+      "owner": "Laura Smith",
+      "contributors": ["Laura Smith", "Alex Kim"],
+      "image": "https://via.placeholder.com/150?text=Feature+Upgrades",
+      "favorite": false,
+      "tasks": [
+        {
+          "taskId": "t6",
+          "taskname": "Feature Enhancement",
+          "description": "Add new features based on user feedback to improve application functionality.",
+          "status": "in progress",
+          "comments": [
+            {
+              "comment": "Verify if the new features align with the initial requirements.",
+              "name": "Laura Smith",
+              "likes": "8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
