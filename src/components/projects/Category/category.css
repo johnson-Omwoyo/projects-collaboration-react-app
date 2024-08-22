@@ -1,0 +1,38 @@
+.search-div {
+  display: flex;
+  height: 72px;
+  justify-content: center;
+  align-items: center;
+}
+.search-line {
+  border: none;
+  height: 0.1px;
+  background-color: rgb(121, 121, 121);
+}
+.search {
+  height: 48px;
+  width: 270px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgb(59, 59, 59);
+}
+/* .all-projects {
+}
+.favourite {
+} */
+
+.no-project {
+  font-family: arial;
+  font-size: 12px;
+  color: rgb(109, 109, 109);
+  font-family: arial;
+  margin-left: 72px;
+  font-style: italic;
+}
+.all-projects-title,
+.favourite-title {
+  font-size: 18px;
+  font-family: arial;
+  color: grey;
+  margin-left: 12px;
+}

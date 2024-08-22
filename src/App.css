@@ -1,0 +1,21 @@
+.app-div {
+  display: flex;
+  flex-direction: row;
+}
+.sidebar-div {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  background-color: rgb(19, 18, 18);
+}
+.projects-div {
+  flex: 1;
+  background-color: grey;
+}
+
+p {
+  font-family: arial;
+}

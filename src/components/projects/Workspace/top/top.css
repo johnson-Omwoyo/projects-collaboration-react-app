@@ -1,0 +1,45 @@
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+.left-div {
+  width: 320px;
+}
+.right-div {
+  width: 320px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.workspace-text {
+  font-family: arial;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  margin-left: 24px;
+}
+.profilepic {
+  height: 52px;
+  border-radius: 32px;
+  margin-right: 12px;
+}
+.profile-name {
+  display: inline-block;
+  color: white;
+}
+.right-div i {
+  color: white;
+  font-size: 18px;
+}
+.notification-icon-div {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(61, 61, 61);
+  border-radius: 16px;
+  margin-right: 32px;
+  padding: 6px;
+}

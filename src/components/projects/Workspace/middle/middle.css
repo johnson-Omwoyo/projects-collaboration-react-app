@@ -1,0 +1,92 @@
+.middle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.middle-bottom,
+.middle-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+}
+.project-title {
+  width: 320px;
+}
+.project-title p {
+  margin-left: 8px;
+  font-family: arial;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 550;
+  color: white;
+}
+.project-title i {
+  margin-left: 12px;
+  color: rgb(138, 138, 138);
+}
+.participants {
+  width: 320px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.fa-people-roof {
+  font-size: 40px;
+  margin-right: 48px;
+  color: rgb(236, 235, 235);
+}
+.line-people-addpeople {
+  width: 10px;
+  background-color: grey;
+}
+.participants button {
+  background-color: rgb(0, 119, 255);
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  padding: 14px;
+}
+.navbar {
+  width: 480px;
+  margin-bottom: -10px;
+  margin-left: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+}
+.navbar p {
+  font-size: 20px;
+  font-family: arial;
+  color: rgb(202, 202, 202);
+  cursor: pointer;
+}
+
+.selected p {
+  color: white;
+padding-bottom:4px ;
+  border-bottom-style: solid;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 550;
+}
+.additional-icons {
+  width: 320px;
+  margin-bottom: -32px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.additional-icons i {
+  color: rgb(202, 202, 202);
+
+  margin-right: 24px;
+}
+.middle-div-line {
+  height: 1px;
+  background-color: grey;
+}

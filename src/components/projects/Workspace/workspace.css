@@ -1,0 +1,12 @@
+.workspace-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.top-div {
+  height: 80px;
+}
+.top-line {
+  height: 1px;
+  background-color: grey;
+}
