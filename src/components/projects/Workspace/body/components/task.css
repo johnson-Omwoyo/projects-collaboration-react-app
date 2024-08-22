@@ -11,12 +11,12 @@
 
 /* Task name styling */
 .task-name {
-  flex:1
+  flex: 1;
   color: #f0f0f0; /* Light text color */
   font-weight: 550;
   font-size: 18px;
   display: inline-block;
-  background: linear-gradient(145deg, #00d2d2 ,#007bff);
+  background: linear-gradient(145deg, #00d2d2, #007bff);
   border: none; /* Remove border */
   border-radius: 4px;
   padding: 4px 8px; /* Padding for better appearance */
