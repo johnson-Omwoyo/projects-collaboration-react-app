@@ -1,45 +1,79 @@
+/* Dark theme for the Top component */
 .top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 100%;
   align-items: center;
+  background-color: #1e1e1e; /* Dark background matching sidebar */
+  color: #f0f0f0; /* Light text color for contrast */
+  padding: 0 24px; /* Add some padding for spacing */
 }
-.left-div {
-  width: 320px;
-}
+
+/* Left and right divs inside top */
+.left-div,
 .right-div {
   width: 320px;
+}
 
+/* Right div styles */
+.right-div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* Workspace text */
 .workspace-text {
-  font-family: arial;
+  font-family: Arial, sans-serif;
   font-size: 32px;
   font-weight: 600;
-  color: white;
+  color: #f0f0f0; /* Light text color for contrast */
   margin-left: 24px;
 }
+
+/* Profile picture */
 .profilepic {
   height: 52px;
-  border-radius: 32px;
+  border-radius: 50%; /* Ensure profile pic is circular */
+  border: 2px solid #333; /* Add a subtle border */
   margin-right: 12px;
 }
+
+/* Profile name */
 .profile-name {
   display: inline-block;
-  color: white;
+  color: #f0f0f0; /* Light text color for contrast */
 }
+
+/* Icons in right div */
 .right-div i {
-  color: white;
+  color: #f0f0f0; /* Light text color for contrast */
   font-size: 18px;
 }
+
+/* Notification icon container */
 .notification-icon-div {
   display: flex;
   justify-content: center;
-  background-color: rgb(61, 61, 61);
+  align-items: center;
+  background: linear-gradient(
+    145deg,
+    #333,
+    #444
+  ); /* Gradient similar to sidebar buttons */
   border-radius: 16px;
   margin-right: 32px;
   padding: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+/* Hover effect for notification icon */
+.notification-icon-div:hover {
+  background: linear-gradient(
+    145deg,
+    #444,
+    #555
+  ); /* Darker gradient on hover */
+  cursor: pointer;
 }

@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./tasks.css";
 import Task from "../components/Task";
 function Tasks() {
+ 
+  // console.log(tasks);
+
   return (
     <div className="body-div">
       <div className="upcoming-task">
@@ -11,7 +14,11 @@ function Tasks() {
           <i class="fa-solid fa-ellipsis"></i>
         </div>
 
-        <Task />
+        {/* {tasks ? (
+          <Task starting={tasks.filter((task) => task.status == "starting")} />
+        ) : (
+          <p>No Upcoming tasks</p>
+        )} */}
       </div>
       <div className="inprogress-task">
         <div className="inprogress-title-div">

@@ -1,37 +1,55 @@
+/* Container for individual tasks */
 .tasks-div {
   border-style: solid;
+  border-width: 1px;
+  border-color: #333; /* Dark border color */
   margin: 10px;
   height: 170px;
-  border-width: 1px;
   border-radius: 6px;
+  background-color: #2e2e2e; /* Darker background to match theme */
 }
 
+/* Task name styling */
 .task-name {
-  color: white;
+  flex:1
+  color: #f0f0f0; /* Light text color */
   font-weight: 550;
   font-size: 18px;
   display: inline-block;
-  border-style: none;
-  background-color: rgb(0, 119, 255);
+  background: linear-gradient(145deg, #00d2d2 ,#007bff);
+  border: none; /* Remove border */
   border-radius: 4px;
+  padding: 4px 8px; /* Padding for better appearance */
 }
+
+/* Description title styling */
 .description-title {
-  color: #d4dbfc;
+  color: #d4dbfc; /* Light blue for description */
 }
+
+/* View comment section */
 .view-comment {
   display: inline-block;
   margin-left: -72px;
 }
+
+/* See comments section */
 .see-comments-div {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: baseline;
+  color: #888; /* Light grey color for comments section */
 }
+
+/* Hover effect for see comments section */
 .see-comments-div:hover {
-  color: white;
+  color: #f0f0f0; /* Light color on hover */
   cursor: pointer;
 }
+
+/* Active effect for see comments section */
 .see-comments-div:active {
   font-size: 18px;
+  color: #007bff; /* Highlight color on active */
 }

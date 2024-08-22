@@ -1,38 +1,110 @@
+/* category.css */
+
+/* Container for search input */
 .search-div {
   display: flex;
-  height: 72px;
   justify-content: center;
-  align-items: center;
 }
+
+.search {
+  width: 80%;
+  max-width: 400px;
+  margin-top: 6px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #333, #444);
+  color: #f0f0f0;
+  font-size: 16px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4), -4px -4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search:focus {
+  margin-bottom: -2px;
+  outline: none;
+  background: linear-gradient(145deg, #444, #555);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5), -4px -4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid #007bff;
+}
+
+/* Separator line */
 .search-line {
   border: none;
-  height: 0.1px;
-  background-color: rgb(121, 121, 121);
+  height: 1px;
+  background: linear-gradient(90deg, #007bff, #00d2d2);
+  margin: 9.6px 0;
 }
-.search {
-  height: 48px;
-  width: 270px;
-  border: none;
-  border-radius: 2px;
-  background-color: rgb(59, 59, 59);
-}
-/* .all-projects {
-}
-.favourite {
-} */
 
+/* Container for favorite projects and all projects */
+.favourite,
+.all-projects {
+  margin: 20px auto;
+  padding: 12px;
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  max-width: 420px;
+}
+
+/* Title styles for sections */
+.favourite-title,
+.all-projects-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.favourite-title::after,
+.all-projects-title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #00d2d2);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+}
+
+/* Button styling for projects */
+.favorite-button,
+.project-button {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #007bff, #00d2d2);
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.favorite-button:hover,
+.project-button:hover {
+  background: linear-gradient(145deg, #0056b3, #00a8a8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* No project message */
 .no-project {
-  font-family: arial;
-  font-size: 12px;
-  color: rgb(109, 109, 109);
-  font-family: arial;
-  margin-left: 72px;
+  font-size: 16px;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
   font-style: italic;
 }
-.all-projects-title,
-.favourite-title {
-  font-size: 18px;
-  font-family: arial;
-  color: grey;
-  margin-left: 12px;
+
+/* Additional styles for containers */
+.favourite,
+.all-projects {
+  background: transparent;
 }

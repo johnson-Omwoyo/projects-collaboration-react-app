@@ -1,53 +1,76 @@
+/* Dark theme for the Middle component */
 .middle {
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: #1e1e1e; /* Dark background matching sidebar */
+  color: #f0f0f0; /* Light text color for contrast */
 }
+
+/* Flex containers for top and bottom sections */
 .middle-bottom,
 .middle-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 80px;
+  padding: 0 24px; /* Padding for spacing */
 }
+
+/* Project title section */
 .project-title {
   width: 320px;
 }
+
 .project-title p {
   margin-left: 8px;
-  font-family: arial;
+  font-family: Arial, sans-serif;
   display: inline-block;
   font-size: 24px;
   font-weight: 550;
-  color: white;
+  color: #f0f0f0; /* Light text color for contrast */
 }
+
 .project-title i {
   margin-left: 12px;
-  color: rgb(138, 138, 138);
+  color: #888; /* Lighter grey for icons */
 }
+
+/* Participants section */
 .participants {
   width: 320px;
-
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .fa-people-roof {
   font-size: 40px;
   margin-right: 48px;
-  color: rgb(236, 235, 235);
+  color: #f0f0f0; /* Light text color for contrast */
 }
+
 .line-people-addpeople {
   width: 10px;
-  background-color: grey;
+  background-color: #333; /* Darker line color to match dark theme */
 }
+
+/* Button styling in participants section */
 .participants button {
-  background-color: rgb(0, 119, 255);
-  padding: 8px;
-  border: none;
-  border-radius: 3px;
+  background-color: #007bff; /* Match sidebar button gradient */
   padding: 14px;
+  border: none;
+  border-radius: 5px; /* Slightly rounded corners */
+  color: #fff; /* White text for contrast */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition */
 }
+
+.participants button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Navbar section */
 .navbar {
   width: 480px;
   margin-bottom: -10px;
@@ -57,36 +80,40 @@
   align-items: end;
   justify-content: space-between;
 }
+
 .navbar p {
   font-size: 20px;
-  font-family: arial;
-  color: rgb(202, 202, 202);
+  font-family: Arial, sans-serif;
+  color: #ccc; /* Light grey for text */
   cursor: pointer;
 }
 
 .selected p {
-  color: white;
-padding-bottom:4px ;
-  border-bottom-style: solid;
+  color: #f0f0f0; /* Light text color for selected items */
+  padding-bottom: 4px;
+  border-bottom: 2px solid #007bff; /* Highlight color for selected item */
   margin-bottom: 10px;
   font-size: 22px;
   font-weight: 550;
 }
+
+/* Additional icons section */
 .additional-icons {
   width: 320px;
   margin-bottom: -32px;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.additional-icons i {
-  color: rgb(202, 202, 202);
 
+.additional-icons i {
+  color: #ccc; /* Light grey for icons */
   margin-right: 24px;
 }
+
+/* Divider line */
 .middle-div-line {
   height: 1px;
-  background-color: grey;
+  background-color: #333; /* Darker line color to match dark theme */
 }

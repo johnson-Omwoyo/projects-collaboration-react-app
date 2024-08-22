@@ -39,7 +39,7 @@ function Sidebar() {
             onClick={handleSidebarClick}
             className="fa-solid fa-envelope"
           ></i>
-          <div className="badge">1</div>
+          <div className="badgeb">1</div>
         </button>
         <button
           className={
@@ -53,7 +53,7 @@ function Sidebar() {
             onClick={handleSidebarClick}
             className="fa-solid fa-user-group"
           ></i>
-          <div className="badge">4</div>
+          <div className="badgeb">4</div>
         </button>
         <button
           className={
@@ -67,7 +67,7 @@ function Sidebar() {
             onClick={handleSidebarClick}
             className="fa-solid fa-bell"
           ></i>
-          <div className="badge">3</div>
+          <div className="badgeb">3</div>
         </button>
         <button
           className={

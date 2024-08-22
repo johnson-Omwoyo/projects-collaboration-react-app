@@ -1,77 +1,120 @@
+/* Dark theme for Sidebar component */
+
+/* Sidebar container */
 .sidebar-div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #1e1e1e; /* Match the dark background color of the category component */
+  color: #f0f0f0; /* Light text color for contrast */
 }
 
+/* Margin and alignment for child divs */
 .sidebar-div div {
   margin-bottom: 160px;
 }
+
+/* Sidebar logo */
 .logo {
   font-size: 62px;
+  color: #f0f0f0; /* Match text color with the rest of the sidebar */
 }
 
+/* Selected sidebar icon */
 .selected-sidebar-icon {
   padding: 6px;
   border-radius: 50%;
   margin-bottom: 32px;
-  background-color: rgb(0, 119, 255);
+  background: linear-gradient(
+    145deg,
+    #007bff,
+    #00d2d2
+  ); /* Gradient similar to buttons in category */
   border: none;
-  color: black;
-
-  /*  */
+  color: #ffffff;
 }
+
+/* Badge on selected icon */
 .selected-sidebar-icon .badge {
   opacity: 0;
 }
 
+/* Hover effect for icons */
 .sidebar-div i:hover {
   cursor: pointer;
+  color: #007bff; /* Highlight color on hover */
 }
 
+/* Button icons in the sidebar */
 .sidebar-div button i {
   font-size: 22px;
+  color: #f0f0f0; /* Consistent text color for icons */
 }
+
+/* Sidebar footer */
 .sidebar-foot {
   display: flex;
   flex-direction: column;
   margin-top: 230px;
 }
+
+/* Sidebar footer icons */
 .sidebar-foot i {
   margin-bottom: 32px;
   font-size: 22px;
-  opacity: 0.5;
-  z-index: 4;
+  opacity: 0.6;
+  color: #f0f0f0; /* Match with the rest of the sidebar */
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
+
+/* Hover state for sidebar footer icons */
+.sidebar-foot i:hover {
+  cursor: pointer;
+  color: #007bff; /* Highlight color on hover */
+  background-color: #333; /* Dark background on hover */
+}
+
+/* Sidebar div buttons */
 .sidebar-div-button {
   padding: 8px;
   border-radius: 50%;
   margin-bottom: 32px;
-  background-color: transparent;
+  background: linear-gradient(
+    145deg,
+    #333,
+    #444
+  ); /* Gradient similar to search input */
   border: none;
-  color: rgb(226, 223, 223);
-}
-.sidebar-div-button i:active {
-  color: white;
-  font-size: 20px;
-}
-.sidebar-foot i:hover {
-  cursor: pointer;
-  background-color: grey;
+  color: #e0e0e0; /* Light text color for contrast */
+  transition: color 0.3s ease;
 }
 
+/* Active state for sidebar div buttons */
+.sidebar-div-button i:active {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* Notification, friends, and messages buttons */
 .notification-button,
 .friends-button,
 .messages-button {
   position: relative;
 }
-.badge {
+
+/* Badge styling */
+.badgeb {
   position: absolute;
   top: -3px;
-  background-color: rgb(255, 38, 38);
   right: -3px;
+  background-color: #ff2626; /* Consistent badge color */
+  color: white;
   font-weight: 500;
   width: 18px;
   height: 18px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
 }

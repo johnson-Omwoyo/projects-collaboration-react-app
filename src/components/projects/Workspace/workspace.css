@@ -8,5 +8,6 @@
 }
 .top-line {
   height: 1px;
-  background-color: grey;
+  background: linear-gradient(90deg, #007bff, #00d2d2);
+  
 }

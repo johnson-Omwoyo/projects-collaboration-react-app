@@ -1,22 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import "./category.css";
-function Category() {
+
+function Category({ projects }) {
+  // State to manage search input
+  const [searchTerm, setSearchTerm] = useState("");
+
+  // Filter projects based on search term
+  const filteredProjects = projects.filter((project) =>
+    project.projectname.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  // Filter favorite projects
+  const favoriteProjects = filteredProjects.filter(
+    (project) => project.favorite
+  );
+  // Filter all projects excluding favorites
+  const allProjects = filteredProjects.filter((project) => !project.favorite);
+
   return (
     <div>
       <div className="search-div">
-        <input className="search" type="text" placeholder="Search" />
+        <input
+          className="search"
+          type="text"
+          placeholder="Search"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
       </div>
       <hr className="search-line" />
-      <div>
-        <div className="favourite">
-          <p className="favourite-title">Favourite</p>
-          <p className="no-project"> No Favorites</p>
+
+      {searchTerm && filteredProjects.length === 0 ? (
+        <p className="no-project">No project with such name</p>
+      ) : (
+        <div>
+          <div className="favourite">
+            <p className="favourite-title">Favourite</p>
+            {favoriteProjects.length > 0 ? (
+              favoriteProjects.map((project) => (
+                <button key={project.projectId} className="favorite-button">
+                  {project.projectname}
+                </button>
+              ))
+            ) : (
+              <p className="no-project">No Favorites</p>
+            )}
+          </div>
+          <div className="all-projects">
+            <p className="all-projects-title">All Projects</p>
+            {allProjects.length > 0 ? (
+              allProjects.map((project) => (
+                <button key={project.projectId} className="project-button">
+                  {project.projectname}
+                </button>
+              ))
+            ) : (
+              <p className="no-project">No Projects Found</p>
+            )}
+          </div>
         </div>
-        <div className="all-projects">
-          <p className="all-projects-title">All Projects</p>
-          <p className="no-project">you dont have any project</p>
-        </div>
-      </div>
+      )}
     </div>
   );
 }

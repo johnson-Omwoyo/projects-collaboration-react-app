@@ -1,3 +1,4 @@
+/* Title divs for different task statuses */
 .upcoming-title-div,
 .inprogress-title-div,
 .completed-title-div {
@@ -7,49 +8,73 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-
   padding: 12px;
+  background-color: #2e2e2e; /* Dark background matching sidebar */
+  color: #f0f0f0; /* Light text color for contrast */
+  border-bottom: 1px solid #333; /* Dark border for separation */
 }
+
+/* Text inside the title divs */
 .upcoming-title-div p,
 .inprogress-title-div p,
 .completed-title-div p {
   display: inline-block;
-  color: rgb(255, 255, 255);
-  font-family: arial;
- 
+  color: #f0f0f0; /* Light text color for titles */
+  font-family: Arial, sans-serif;
 }
 
+/* Icons inside the title divs */
+.upcoming-title-div i,
+.inprogress-title-div i,
+.completed-title-div i {
+  font-size: 12px;
+  margin-right: 14px;
+  color: #888; /* Light grey color for icons */
+}
+
+/* Hover effects for title divs */
+.upcoming-title-div:hover,
+.inprogress-title-div:hover,
+.completed-title-div:hover {
+  background-color: #333; /* Darker background on hover */
+}
+
+/* Body container for task sections */
 .body-div {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
   height: 100%;
+  padding: 16px; /* Padding for spacing */
+  background-color: #1e1e1e; /* Dark background matching sidebar */
 }
+
+/* Task sections */
 .inprogress-task,
 .upcoming-task,
 .completed-task {
   flex: 1;
-  /* background-color: aqua; */
   margin: 24px;
   border-radius: 4px;
-  border: solid;
-  border-width: 1px;
-  color: rgb(201, 201, 201);
+  border: 1px solid #333; /* Dark border color for task sections */
+  color: #f0f0f0; /* Light text color for task sections */
   display: flex;
   flex-direction: column;
   height: 624px;
   overflow-y: auto;
   overflow-x: hidden;
   align-items: center;
+  background-color: #2e2e2e; /* Darker background for task sections */
 }
 
-.upcoming-title-div i,
-.inprogress-title-div i,
-.completed-title-div i {
-  font-size: 12px;
-  margin-right: 14px;
-}
+/* Add button icon */
 .body-div .fa-plus {
   margin-right: -48px;
+  color: #007bff; /* Match button color with sidebar */
+}
+
+/* Icon color for the add button */
+.body-div .fa-plus:hover {
+  color: #0056b3; /* Darker blue on hover */
 }

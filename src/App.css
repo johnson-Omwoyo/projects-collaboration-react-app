@@ -19,3 +19,6 @@
 p {
   font-family: arial;
 }
+* {
+  transition: all 0.15s; /* Adjust the timing and easing as needed */
+}
