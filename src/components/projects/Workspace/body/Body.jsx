@@ -4,10 +4,10 @@ import Tasks from "./routes/Tasks";
 import Overview from "./routes/Overview";
 import Files from "./routes/Files";
 import Discussion from "./routes/Discussion";
-function Body() {
+function Body({ projectTasks }) {
   return (
     <>
-      <Tasks />
+      <Tasks projectTasks={projectTasks && projectTasks} />
       <Overview />
       <Files />
       <Discussion />

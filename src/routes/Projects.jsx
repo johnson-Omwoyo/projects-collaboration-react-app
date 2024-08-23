@@ -4,6 +4,7 @@ import Category from "../components/projects/Category/Category.jsx";
 import { useEffect, useState } from "react";
 function Projects() {
   const [projects, setProjects] = useState([]);
+  const [currentProjectKey, setCurrentProjectKey] = useState("p1");
   const projectsURL = "http://localhost:5500/projects";
   useEffect(() => {
     const fetchProjects = async () => {
@@ -21,18 +22,31 @@ function Projects() {
     };
     fetchProjects(projects);
   }, []);
-  console.log(projects);
+  //check for the clicked project to decide which one to dispalay
+  const clickedProjectKey = (key) => {
+    key && setCurrentProjectKey(key);
+    console.log(key);
+  };
+
+  const whatToDisplay = projects.filter(
+    (project) => project.id == currentProjectKey
+  );
+
   return (
     <div className="projects-div">
       <div className="line"></div>
       <div className="categories-div">
-        {projects ? <Category projects={projects} /> : <Category projects="" />}{" "}
+        {projects ? (
+          <Category projects={projects} clickedProject={clickedProjectKey} />
+        ) : (
+          <Category projects="" />
+        )}{" "}
       </div>
       <div className="workspace-div">
-        {projects ? (
-          <Workspace projects={projects} />
+        {whatToDisplay ? (
+          <Workspace project={whatToDisplay[0]} />
         ) : (
-          <Workspace projects="" />
+          <Workspace project={projects[0]} />
         )}
       </div>
     </div>

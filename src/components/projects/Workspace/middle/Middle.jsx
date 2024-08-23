@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./middle.css";
-function Middle() {
+function Middle({ title }) {
   const [selected, setSelected] = useState();
   const handleMiddleNavbarClick = (e) => {
     setTimeout(() => {
@@ -12,7 +12,7 @@ function Middle() {
     <div className="middle">
       <div className="middle-top">
         <div className="project-title">
-          <p>Native Project</p>
+          <p>{title ? title : "Native Project"}</p>
           <i className="fa-solid fa-circle-exclamation"></i>
           <i className="fa-solid fa-star"></i>
         </div>
@@ -46,7 +46,7 @@ function Middle() {
               Discussions
             </p>
           </div>
-          <div className={selected=="files"?"selected":""}>
+          <div className={selected == "files" ? "selected" : ""}>
             <p name="files" onClick={handleMiddleNavbarClick}>
               Files
             </p>

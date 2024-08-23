@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./category.css";
 
-function Category({ projects }) {
+function Category({ projects, clickedProject }) {
   // State to manage search input
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -36,9 +36,13 @@ function Category({ projects }) {
         <div>
           <div className="favourite">
             <p className="favourite-title">Favourite</p>
-            {favoriteProjects.length > 0 ? (
+            {favoriteProjects > 0 ? (
               favoriteProjects.map((project) => (
-                <button key={project.projectId} className="favorite-button">
+                <button
+                  key={project.id}
+                  onClick={() => clickedProject(project.id)}
+                  className="favorite-button"
+                >
                   {project.projectname}
                 </button>
               ))
@@ -48,9 +52,13 @@ function Category({ projects }) {
           </div>
           <div className="all-projects">
             <p className="all-projects-title">All Projects</p>
-            {allProjects.length > 0 ? (
+            {allProjects ? (
               allProjects.map((project) => (
-                <button key={project.projectId} className="project-button">
+                <button
+                  key={project.id}
+                  onClick={() => clickedProject(project.id)}
+                  className="project-button"
+                >
                   {project.projectname}
                 </button>
               ))

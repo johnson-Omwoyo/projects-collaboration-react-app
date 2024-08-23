@@ -18,9 +18,7 @@
 }
 
 /* Project title section */
-.project-title {
-  width: 320px;
-}
+
 
 .project-title p {
   margin-left: 8px;
@@ -33,6 +31,7 @@
 
 .project-title i {
   margin-left: 12px;
+
   color: #888; /* Lighter grey for icons */
 }
 

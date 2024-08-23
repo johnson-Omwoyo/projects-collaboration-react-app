@@ -1,8 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./tasks.css";
 import Task from "../components/Task";
-function Tasks() {
- 
+function Tasks({ projectTasks }) {
+  let starting;
+  let inProgress;
+  let completed;
+  projectTasks
+    ? ((starting = projectTasks.filter((task) => task.status == "starting")),
+      (inProgress = projectTasks.filter(
+        (task) => task.status == "in progress"
+      )),
+      (completed = projectTasks.filter((task) => task.status == "completed")))
+    : "";
+
   // console.log(tasks);
 
   return (
@@ -14,11 +24,7 @@ function Tasks() {
           <i class="fa-solid fa-ellipsis"></i>
         </div>
 
-        {/* {tasks ? (
-          <Task starting={tasks.filter((task) => task.status == "starting")} />
-        ) : (
-          <p>No Upcoming tasks</p>
-        )} */}
+        {starting ? <Task starting={starting} /> : <p>No Upcoming tasks</p>}
       </div>
       <div className="inprogress-task">
         <div className="inprogress-title-div">
@@ -27,7 +33,11 @@ function Tasks() {
           <i class="fa-solid fa-plus"></i>
           <i class="fa-solid fa-ellipsis"></i>
         </div>
-        <Task />
+        {inProgress ? (
+          <Task inProgress={inProgress} />
+        ) : (
+          <p>No tasks in porogress</p>
+        )}
       </div>
       <div className="completed-task">
         <div className="completed-title-div">
@@ -35,7 +45,7 @@ function Tasks() {
 
           <i class="fa-solid fa-ellipsis"></i>
         </div>
-        <Task />
+        {completed ? <Task completed={completed} /> : <p>No Completed tasks</p>}
       </div>
     </div>
   );

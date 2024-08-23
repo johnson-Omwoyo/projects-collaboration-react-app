@@ -1,16 +1,17 @@
 {
   "projects": [
     {
-      "projectId": "p1",
+      "id": "p1",
       "projectname": "Database Revamp",
       "category": "Database Management",
       "owner": "Jonson Omwoyo",
       "contributors": ["Jonson Omwoyo", "Sara Lee"],
       "image": "https://via.placeholder.com/150?text=Database+Revamp",
       "favorite": false,
+
       "tasks": [
         {
-          "taskId": "t1",
+          "id": "t1",
           "taskname": "Database Upgrade",
           "description": "We will look at the database hierarchy and implement some authentication.",
           "status": "starting",
@@ -25,7 +26,7 @@
       ]
     },
     {
-      "projectId": "p2",
+      "id": "p2",
       "projectname": "API Enhancement",
       "category": "API Development",
       "owner": "Sara Lee",
@@ -34,7 +35,7 @@
       "favorite": true,
       "tasks": [
         {
-          "taskId": "t2",
+          "id": "t2",
           "taskname": "API Integration",
           "description": "Integrate third-party API to enhance functionality and streamline data exchange.",
           "status": "in progress",
@@ -49,7 +50,7 @@
       ]
     },
     {
-      "projectId": "p3",
+      "id": "p3",
       "projectname": "User Experience Overhaul",
       "category": "UI/UX Design",
       "owner": "Alex Kim",
@@ -58,10 +59,23 @@
       "favorite": false,
       "tasks": [
         {
-          "taskId": "t3",
+          "id": "t3",
           "taskname": "UI Redesign",
           "description": "Revamp the user interface to improve user experience and accessibility.",
           "status": "completed",
+          "comments": [
+            {
+              "comment": "The new design looks great, but can we add more contrast?",
+              "name": "Alex Kim",
+              "likes": "15"
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "taskname": "UI Redesign",
+          "description": "Revamp the user interface to improve user experience and accessibility.",
+          "status": "starting",
           "comments": [
             {
               "comment": "The new design looks great, but can we add more contrast?",
@@ -73,7 +87,7 @@
       ]
     },
     {
-      "projectId": "p4",
+      "id": "p4",
       "projectname": "Application Performance",
       "category": "Performance Optimization",
       "owner": "Emily Wong",
@@ -82,7 +96,7 @@
       "favorite": true,
       "tasks": [
         {
-          "taskId": "t4",
+          "id": "t4",
           "taskname": "Performance Tuning",
           "description": "Optimize application performance by analyzing and addressing bottlenecks.",
           "status": "starting",
@@ -97,7 +111,7 @@
       ]
     },
     {
-      "projectId": "p5",
+      "id": "p5",
       "projectname": "Security Overhaul",
       "category": "Security",
       "owner": "Michael Johnson",
@@ -106,7 +120,7 @@
       "favorite": false,
       "tasks": [
         {
-          "taskId": "t5",
+          "id": "t5",
           "taskname": "Security Audit",
           "description": "Conduct a thorough security audit to identify and mitigate vulnerabilities.",
           "status": "in progress",
@@ -121,7 +135,7 @@
       ]
     },
     {
-      "projectId": "p6",
+      "id": "p6",
       "projectname": "Feature Upgrades",
       "category": "Feature Development",
       "owner": "Laura Smith",
@@ -130,7 +144,7 @@
       "favorite": false,
       "tasks": [
         {
-          "taskId": "t6",
+          "id": "t6",
           "taskname": "Feature Enhancement",
           "description": "Add new features based on user feedback to improve application functionality.",
           "status": "in progress",
