@@ -36,7 +36,7 @@ function Category({ projects, clickedProject }) {
         <div>
           <div className="favourite">
             <p className="favourite-title">Favourite</p>
-            {favoriteProjects > 0 ? (
+            {favoriteProjects  ? (
               favoriteProjects.map((project) => (
                 <button
                   key={project.id}

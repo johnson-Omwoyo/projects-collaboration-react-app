@@ -2,6 +2,8 @@
 .upcoming-title-div,
 .inprogress-title-div,
 .completed-title-div {
+  
+
   font-size: 18px;
   font-weight: 550;
   display: flex;
@@ -27,6 +29,7 @@
 .upcoming-title-div i,
 .inprogress-title-div i,
 .completed-title-div i {
+  cursor: pointer;
   font-size: 12px;
   margin-right: 14px;
   color: #888; /* Light grey color for icons */
@@ -54,8 +57,9 @@
 .inprogress-task,
 .upcoming-task,
 .completed-task {
+
   flex: 1;
-  margin: 24px;
+  margin: 18px;
   border-radius: 4px;
   border: 1px solid #333; /* Dark border color for task sections */
   color: #f0f0f0; /* Light text color for task sections */

@@ -20,8 +20,9 @@ function Tasks({ projectTasks }) {
       <div className="upcoming-task">
         <div className="upcoming-title-div">
           <p>Upcoming Task</p>
-          <i class="fa-solid fa-plus"></i>
           <i class="fa-solid fa-ellipsis"></i>
+
+          
         </div>
 
         {starting ? <Task starting={starting} /> : <p>No Upcoming tasks</p>}
@@ -30,7 +31,6 @@ function Tasks({ projectTasks }) {
         <div className="inprogress-title-div">
           <p>Work In Progress</p>
 
-          <i class="fa-solid fa-plus"></i>
           <i class="fa-solid fa-ellipsis"></i>
         </div>
         {inProgress ? (
